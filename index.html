@@ -4,101 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <title>Anton Zaratustra Resume</title>
+
+    <style>
+        h1 {
+            color: rgb(27, 27, 27);
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body style="background: rgba(254, 216, 0, 0.852);">
     <!-- <img src="https://sun9-33.userapi.com/impg/mjBEeboYcA3RKK6eNxXqhkiqSKEGN_Kqr4g_Tg/ryrIkpqFR7M.jpg?size=2560x2560&quality=95&sign=643e5ba49a8cdfbb45319c5ca5c2e6a9&type=album" alt="Фото" width="200"> -->
-    <table cellspacing="20">
-        <tr>
-            <td>
-                <img src="./Avatar.jpg" alt="Фото" width="200">
-            </td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <img class="avatar" style="border-radius: 50%;" src="./Avatar.jpg" alt="Фото" width="180" height="180">
+
+            <aside class="info-aside">
                 <h1>Антон Заратустра</h1>
-                <p><em>Я фронтенд-разработчик и видеоблогер</em></p>
-                <p>Я люблю заниматься программированием и спортом</p>
-                <p><strong>Мой Youtube канал</strong></p>
-            </td>
-        </tr>
-    </table>
+                <p>Я фронтенд-разработчик и видеоблогер</p>
+                <p>Люблю заниматься программированием и спортом</p>
+                <p><strong><a href="#" target="_blank">Мой Youtube канал</a></strong></p>
+            </aside>
+        </div>
 
-    <hr>
+        <hr color="white">
 
-    <h2>Мои соцсети</h2>
-    <ul type="square">
-        <li><a href="#" target="_blank">Вконтакте</a></li>
-        <li><a href="#">Telegram</a></li>
-    </ul>
+        <div class="social round">
+            <h2>Мои соцсети</h2>
+            <ul class="social-ul" type="square">
+                <li><a id="first-link" href="#" target="_blank">Вконтакте</a></li>
+                <li><a id="second-link" href="#">Telegram</a></li>
+            </ul>
+        </div>
 
-    <hr>
+        <hr color="white">
+        <div class="round">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li><em>Программирование</em></li>
+                <li><em>Блоггинг</em></li>
+                <li><em>Спорт</em></li>
+            </ol>
+        </div>
 
-    <h2>Мои хобби</h2>
+        <hr color="white">
 
-    <ol type="I">
-        <li>Программирование</li>
-        <li>Блоггинг</li>
-        <li>Спорт</li>
-    </ol>
+        <div class="round">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Компания</th>
+                        <th>Год</th>
+                        <th>Должность</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Роснефть</td>
+                        <td>2014</td>
+                        <td>Инженер</td>
+                    </tr>
+                    <tr>
+                        <td>ТРМ</td>
+                        <td>2023</td>
+                        <td>Бизнес-ассистент</td>
+                    </tr>
+                <tfoot>
+                </tfoot>
+                </tbody>
+            </table>
+        </div>
 
-    <hr>
+        <hr color="white">
 
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Год</th>
-                <th>Должность</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Роснефть</td>
-                <td>2014</td>
-                <td>Инженер</td>
-            </tr>
-            <tr>
-                <td>ТРМ</td>
-                <td>2023</td>
-                <td>Бизнес-ассистент</td>
-            </tr>
-        <tfoot>
-        </tfoot>
-        </tbody>
+        <div class="round">
+            <h2>Youtube курсы</h2>
+            <a href="./course_1.html">Курс</a>
+        </div>
 
-    </table>
+        <hr color="white">
 
-    <hr>
+        <div class="contact round bg-orangered">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите имя...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш e-mail</label>
+                        <input type="email" id="email" placeholder="Введите e-mail...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение</label>
+                    <textarea name="text" id="text" cols="30" rows="10"
+                        placeholder="Напишите сообщение здесь..."></textarea>
+                    <input class="submit-button" type="submit" value="Связаться">
 
-    <h2>Youtube курсы</h2>
-    <a href="./course_1.html">Курс</a>
+                </div>
+            </form>
+        </div>
 
-    <hr>
+        <!-- <div class="box-model">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div> -->
 
-    <h2>Связаться со мной</h2>
 
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите имя...">
+        <h2>Position Relative</h2>
 
-        <br>
+        <div class="position">
+            <div class="box">
+                <h2>Position Absolute</h2>
+            </div>
+        </div>
 
-        <label for="email">Ваш e-mail</label>
-        <input type="email" id="email" placeholder="Введите e-mail...">
+        
 
-        <br>
+    </div>
 
-        <label for="text">Ваше сообщение</label>
 
-        <br>
-
-        <textarea name="text" id="text" cols="30" rows="10" placeholder="Напишите сообщение здесь..."></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться">
-    </form>
+    <button class="button-right-bottom">
+        Связаться
+    </button>
 
 </body>
 
 </html>
+
+<!-- Навигация по странице метки и прокрутка из nav -->
